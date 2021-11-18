@@ -1,0 +1,19 @@
+﻿<Window x:Class="Gestion.GestionMerc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gestion"
+        mc:Ignorable="d"
+        Title="Gestion Mercaderias" Height="450" Width="800"
+        WindowStartupLocation="CenterOwner"
+        >
+        
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="284" Margin="25,41,0,0" VerticalAlignment="Top" Width="735" Name="MuestraMercaderia" />
+        <Label Content="Lista de Mercaderias" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Width="153"/>
+        <Button Content="Insertar Mercaderia" HorizontalAlignment="Left" Margin="25,360,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click" Name="bGestionmerc"/>
+        <Button Content="Modificar Mercaderia" HorizontalAlignment="Left" Margin="175,360,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click_1"/>
+    </Grid>
+   
+</Window>

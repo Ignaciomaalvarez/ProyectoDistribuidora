@@ -1,0 +1,21 @@
+C:\Users\Nacho\source\repos\Gestion\bin\Debug\Gestion.exe.config
+C:\Users\Nacho\source\repos\Gestion\bin\Debug\Gestion.exe
+C:\Users\Nacho\source\repos\Gestion\bin\Debug\Gestion.pdb
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion.csproj.AssemblyReference.cache
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\MainWindow.g.cs
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\App.g.cs
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion_MarkupCompile.cache
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion_MarkupCompile.lref
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\MainWindow.baml
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion.g.resources
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion.Properties.Resources.resources
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion.csproj.GenerateResource.cache
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion.exe
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion.pdb
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion Mercaderias\GestionMerc.g.cs
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion Mercaderias\Insert_Merc.g.cs
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion Mercaderias\GestionMerc.baml
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion Mercaderias\Insert_Merc.baml
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Update_merc.g.cs
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Update_merc.baml
