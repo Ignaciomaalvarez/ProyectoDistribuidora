@@ -26,9 +26,20 @@ namespace Gestion
             InitializeComponent();
             Muestra_MercUpdate();
 
-            
+
+
+            if (MuestraMercUpdate.IsMouseOver==true)
+            {
+                TbTipoproducto.Text = MuestraMercUpdate.Columns[1].ToString();
+            } 
+            //TbTipoproducto.Text = "mono";
+            //TbTipoproducto.Text = MuestraMercUpdate.CurrentCell.ToString();
 
         }
+
+        
+
+
         private void Muestra_MercUpdate()
             {
 
@@ -40,17 +51,18 @@ namespace Gestion
                 SqlDataAdapter miadapatadorsql = new SqlDataAdapter(consulta, connection.Connection);
 
                 using (miadapatadorsql)
-                {
-                    DataTable mydatable = new DataTable();
+                    {
+                         DataTable mydatable = new DataTable();
 
-                    miadapatadorsql.Fill(mydatable);
+                         miadapatadorsql.Fill(mydatable);
 
-                    MuestraMercUpdate.DisplayMemberPath = "MuestraInfo";
-                    MuestraMercUpdate.SelectedValuePath = "id";
-                    MuestraMercUpdate.ItemsSource = mydatable.DefaultView;
+                        MuestraMercUpdate.DisplayMemberPath = "MuestraInfo";
+                        MuestraMercUpdate.SelectedValuePath = "id";
+                        MuestraMercUpdate.ItemsSource = mydatable.DefaultView;
 
 
-                }
+                    }
+
 
             
 

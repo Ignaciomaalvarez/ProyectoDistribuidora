@@ -7,12 +7,18 @@
         mc:Ignorable="d"
         Title="Modificar Mercaderia" Height="450" Width="800">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="200" Margin="30,45,0,0" VerticalAlignment="Top" Width="710" Name="MuestraMercUpdate"/>
+        <DataGrid HorizontalAlignment="Left" Height="200" Margin="30,45,0,0" VerticalAlignment="Top" Width="710" Name="MuestraMercUpdate" SelectionUnit="FullRow"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="30,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbTipoproducto"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" x:Name="TbNombre"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="310,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" x:Name="TbCantidad" />
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="440,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" x:Name="TbPrecio" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbNombre"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="310,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbCantidad" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="440,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbPrecio" />
         <Button Content="Actualizar" HorizontalAlignment="Left" Margin="605,290,0,0" VerticalAlignment="Top" Width="105" Height="23" Name="BtUpdate"/>
+        <Label Content="Tipo" HorizontalAlignment="Left" Margin="30,264,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Producto" HorizontalAlignment="Left" Margin="160,264,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="310,264,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="440,264,0,0" VerticalAlignment="Top" Width="105"/>
+
+
 
     </Grid>
 </Window>
