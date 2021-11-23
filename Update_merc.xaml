@@ -5,19 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gestion"
         mc:Ignorable="d"
-        Title="Modificar Mercaderia" Height="450" Width="800">
+        Title="Modificar Mercaderia" Height="550" Width="800">
     <Grid>
         <DataGrid HorizontalAlignment="Left" Height="200" Margin="30,45,0,0" VerticalAlignment="Top" Width="710" Name="MuestraMercUpdate" SelectionUnit="FullRow"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="30,290,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="105" Name="TbTipoproducto" Text=""/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbNombre"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="310,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbCantidad" />
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="440,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbPrecio" />
-        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="605,290,0,0" VerticalAlignment="Top" Width="105" Height="23" Name="BtUpdate" Click="BtUpdate_Click"/>
-        <Label Content="Tipo" HorizontalAlignment="Left" Margin="30,264,0,0" VerticalAlignment="Top" Width="105"/>
-        <Label Content="Producto" HorizontalAlignment="Left" Margin="160,264,0,0" VerticalAlignment="Top" Width="105"/>
-        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="310,264,0,0" VerticalAlignment="Top" Width="105"/>
-        <Label Content="Precio" HorizontalAlignment="Left" Margin="440,264,0,0" VerticalAlignment="Top" Width="105"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="30,350,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,290,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="105" Name="TbTipoproducto" Text=""/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="245,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbNombre"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="390,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbCantidad" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="525,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105" Name="TbPrecio" />
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="660,290,0,0" VerticalAlignment="Top" Width="105" Height="23" Name="BtUpdate" Click="BtUpdate_Click"/>
+        <Label Content="Tipo" HorizontalAlignment="Left" Margin="115,264,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Producto" HorizontalAlignment="Left" Margin="245,264,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="390,264,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="525,259,0,0" VerticalAlignment="Top" Width="105"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65" Name="Tb_id" />
+        <Label Content="Id" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,0.615"  />
+        <Button Content=">" HorizontalAlignment="Left" Margin="80,293,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.08,0.5" Click="Button_Click"/>
 
 
 

@@ -68,36 +68,90 @@ namespace Gestion
       
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-           // TbTipoproducto.Text = MuestraMercUpdate.Columns[0].GetCellContent(MuestraMercUpdate.SelectedIndex).ToString();
-
-               // [MuestraMercUpdate.SelectedIndex]["Tipo_Producto"].ToString();
-
-        }
+    
 
 
-        //TODO
-        //Ver como sacar el id para hacer el update.
+        
         private void BtUpdate_Click(object sender, RoutedEventArgs e)
         {
-            ConnectionDB connection = new ConnectionDB();
 
-            string consulta = "Update Mercaderias set Nombre=@Nombre, cantidad=@cantidad, precio=@precio where id = " + MuestraMercUpdate.SelectedItem.ToString();
+            try
+            {
+                ConnectionDB connection = new ConnectionDB();
 
-            SqlCommand mysqlcommand = new SqlCommand(consulta, connection.Connection);
-            connection.Connection.Open();
+                string consulta = "Update Mercaderias set Nombre=@Nombre, cantidad=@cantidad, precio=@precio where id = " + Tb_id.Text;
 
-           // mysqlcommand.Parameters.AddWithValue("@Tipo_Producto", TbTipoproducto.Text);
-            mysqlcommand.Parameters.AddWithValue("@Nombre", TbNombre.Text);
-            mysqlcommand.Parameters.AddWithValue("@cantidad", TbCantidad.Text);
-            mysqlcommand.Parameters.AddWithValue("@precio", TbPrecio.Text);
+                SqlCommand mysqlcommand = new SqlCommand(consulta, connection.Connection);
+                connection.Connection.Open();
 
-            mysqlcommand.ExecuteNonQuery();
+                // mysqlcommand.Parameters.AddWithValue("@Tipo_Producto", TbTipoproducto.Text);
+                mysqlcommand.Parameters.AddWithValue("@Nombre", TbNombre.Text);
+                mysqlcommand.Parameters.AddWithValue("@cantidad", TbCantidad.Text);
+                mysqlcommand.Parameters.AddWithValue("@precio", TbPrecio.Text);
 
-            connection.Connection.Close();
+                mysqlcommand.ExecuteNonQuery();
 
-            Muestra_MercUpdate();
+                connection.Connection.Close();
+
+                MessageBox.Show("Registro Actualizado");
+
+                Muestra_MercUpdate();
+
+
+                Tb_id.Text = "";
+                TbTipoproducto.Text = "";
+                TbNombre.Text = "";
+                TbCantidad.Text = "";
+                TbPrecio.Text = "";
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Por favor escriba un valor de id en el campo id");
+
+
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                ConnectionDB connection = new ConnectionDB();
+
+                string consulta = "select * from Mercaderias where id = @IdActualizaprod";
+                SqlCommand mysqlcommand = new SqlCommand(consulta, connection.Connection);
+                SqlDataAdapter mysqladapter = new SqlDataAdapter(mysqlcommand);
+
+
+                using (mysqladapter)
+                {
+                    mysqlcommand.Parameters.AddWithValue("@IdActualizaprod", Tb_id.Text);
+
+                    DataTable mydatable = new DataTable();
+
+                    mysqladapter.Fill(mydatable);
+
+
+                    TbTipoproducto.Text = mydatable.Rows[0]["Tipo_Producto"].ToString();
+
+                    TbNombre.Text = mydatable.Rows[0]["Nombre"].ToString();
+
+                    TbCantidad.Text = mydatable.Rows[0]["cantidad"].ToString();
+
+                    TbPrecio.Text = mydatable.Rows[0]["precio"].ToString();
+                }
+
+            }
+
+            catch (Exception)
+            {
+
+                MessageBox.Show("Por favor escriba un valor valido de id en el campo id");
+
+
+            }
         }
     }
 }
