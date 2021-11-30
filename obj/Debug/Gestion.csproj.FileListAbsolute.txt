@@ -19,3 +19,5 @@ C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion Mercaderias\GestionMerc.ba
 C:\Users\Nacho\source\repos\Gestion\obj\Debug\Gestion Mercaderias\Insert_Merc.baml
 C:\Users\Nacho\source\repos\Gestion\obj\Debug\Update_merc.g.cs
 C:\Users\Nacho\source\repos\Gestion\obj\Debug\Update_merc.baml
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Delete_merc.g.cs
+C:\Users\Nacho\source\repos\Gestion\obj\Debug\Delete_merc.baml

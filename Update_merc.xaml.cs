@@ -9,10 +9,12 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace Gestion
 {
@@ -79,22 +81,41 @@ namespace Gestion
             {
                 ConnectionDB connection = new ConnectionDB();
 
-                string consulta = "Update Mercaderias set Nombre=@Nombre, cantidad=@cantidad, precio=@precio where id = " + Tb_id.Text;
+                string consulta = "Update Mercaderias set Tipo_Producto=@Tipo_Producto, Nombre=@Nombre, cantidad=@cantidad, precio=@precio where id = " + Tb_id.Text;
 
                 SqlCommand mysqlcommand = new SqlCommand(consulta, connection.Connection);
                 connection.Connection.Open();
 
-                // mysqlcommand.Parameters.AddWithValue("@Tipo_Producto", TbTipoproducto.Text);
+                mysqlcommand.Parameters.AddWithValue("@Tipo_Producto", TbTipoproducto.Text);
                 mysqlcommand.Parameters.AddWithValue("@Nombre", TbNombre.Text);
                 mysqlcommand.Parameters.AddWithValue("@cantidad", TbCantidad.Text);
                 mysqlcommand.Parameters.AddWithValue("@precio", TbPrecio.Text);
 
-                mysqlcommand.ExecuteNonQuery();
+                //mysqlcommand.ExecuteNonQuery();
 
-                connection.Connection.Close();
+                //connection.Connection.Close();
 
-                MessageBox.Show("Registro Actualizado");
 
+                string question = "¿esta seguro que desea actualizar?";
+                string caption = "";
+                MessageBoxIcon icon = MessageBoxIcon.Exclamation;
+                MessageBoxButton button = MessageBoxButton.YesNo;
+                DialogResult result;
+
+
+               result= System.Windows.Forms.MessageBox.Show(question,caption, (MessageBoxButtons)button, icon);
+                if(result== System.Windows.Forms.DialogResult.Yes)
+                {
+
+                    mysqlcommand.ExecuteNonQuery();
+
+                    connection.Connection.Close();
+
+
+                    MessageBox.Show("Registro actualizado");
+                }
+                
+                
                 Muestra_MercUpdate();
 
 

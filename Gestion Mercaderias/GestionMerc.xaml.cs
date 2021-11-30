@@ -81,5 +81,11 @@ namespace Gestion
             wupdate_Merc.ShowDialog();
 
         }
+
+        private void bElemilarMercaderia_Click(object sender, RoutedEventArgs e)
+        {
+            Delete_merc wdelete_Merc = new Delete_merc();
+            wdelete_Merc.ShowDialog();
+        }
     }
 }

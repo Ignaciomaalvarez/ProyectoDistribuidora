@@ -8,12 +8,13 @@
         Title="Gestion Mercaderias" Height="450" Width="800"
         WindowStartupLocation="CenterOwner"
         >
-        
+
     <Grid>
         <DataGrid HorizontalAlignment="Left" Height="284" Margin="25,41,0,0" VerticalAlignment="Top" Width="735" Name="MuestraMercaderia"  />
         <Label Content="Lista de Mercaderias" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Width="153"/>
         <Button Content="Insertar Mercaderia" HorizontalAlignment="Left" Margin="25,360,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click" Name="bGestionmerc"/>
         <Button Content="Modificar Mercaderia" HorizontalAlignment="Left" Margin="175,360,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click_1"/>
+        <Button Content="Eliminar Mercaderia" HorizontalAlignment="Left" Margin="330,360,0,0" VerticalAlignment="Top" Width="115" Name="bElemilarMercaderia" Click="bElemilarMercaderia_Click"/>
     </Grid>
-   
+
 </Window>
