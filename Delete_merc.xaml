@@ -5,10 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gestion"
         mc:Ignorable="d"
-        Title="Delete_merc" Height="450" Width="800">
+        Title="Elminar Mercaderia" Height="450" Width="800">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="255" Margin="39,49,0,0" VerticalAlignment="Top" Width="695" Name="Muestraprod_delete"/>
+        <DataGrid HorizontalAlignment="Left" Height="253" Margin="39,49,0,0" VerticalAlignment="Top" Width="695" Name="Muestraprod_delete"/>
         <Label Content="Lista de mercaderias" HorizontalAlignment="Left" Margin="45,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="Si elimina un producto de la lista no se podra recuperar de ninguna manera." HorizontalAlignment="Left" Margin="41,303,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="23,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="55" Name="tb_id"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="tb_tipoproducto"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="270,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="tb_producto"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="412,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="tb_precio"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="559,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="tb_cantidad"/>
+        <Button Content=">" HorizontalAlignment="Left" Margin="83,357,0,0" VerticalAlignment="Top" Width="33" Name="bt_select" Click="bt_select_Click"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="699,357,0,0" VerticalAlignment="Top" Width="75" Name="bt_delete" Click="bt_delete_Click"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="23,331,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tipo" HorizontalAlignment="Left" Margin="127,334,0,0" VerticalAlignment="Top"/>
+        <Label Content="Producto" HorizontalAlignment="Left" Margin="270,334,0,0" VerticalAlignment="Top" />
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="415,334,0,0" VerticalAlignment="Top"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="559,331,0,0" VerticalAlignment="Top"/>
+
+
+
+
+
 
     </Grid>
 </Window>
